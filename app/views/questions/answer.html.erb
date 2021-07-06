@@ -1,12 +1,13 @@
 <div class="container">
   <h1 class="title">Stupid Coaching</h1>
 
-  <div>
+  <div class="card-you">
     <p><%= @answer %></p>
-    <p>- You</p>
+    <br>
+    <p class='you-coach'>- You</p>
   </div>
 
-  <div>
+  <div class="card-answer">
     <% if params[:question].downcase == "i am going to work!" %>
       <p><%= "Great!" %></p>
     <% elsif params[:question].end_with?("?") %>
@@ -14,7 +15,8 @@
     <% else %>
       <p><%= "I don't care, get dressed and go to work!" %></p>
     <% end %>
-    <p>- Your coach</p>
+    <br>
+    <p class='you-coach'>- Your coach</p>
   </div>
 
   <a href=""><%= link_to "Ask a new question", ask_path %></a>

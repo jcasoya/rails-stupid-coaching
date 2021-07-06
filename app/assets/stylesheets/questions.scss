@@ -1,3 +1,85 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  padding-left: 20px;
+}
+
+.card-you {
+  padding: 30px;
+  margin: 20px;
+  border-left: solid;
+  border-color: lightgrey;
+  border-width: 12px;
+}
+
+.card-answer {
+  background-color: #fffee1;
+  margin: 20px;
+  padding: 30px;
+  border-left: solid;
+  border-color: lightgrey;
+  border-width: 12px;
+}
+
+.title {
+  color: #3a3a3a;
+  padding-left: 18px;
+}
+
+.you-coach {
+  font-style: italic;
+  font-weight: 300;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #1e3096;
+  transition: .3s;
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+label {
+  font-weight: 300;
+  padding-bottom: 10px;
+}
+
+input[type="text"] {
+  width: 20%;
+  padding: 12px 5px;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  padding: 12px 23px;
+  background-color: #5568d5;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
+  transition: .1s;
+}
+
+input[type="submit"]:hover {
+  background-color: #1e3096;
+  color: white;
+}
